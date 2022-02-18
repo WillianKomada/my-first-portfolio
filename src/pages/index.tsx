@@ -1,4 +1,6 @@
 import { Experiences } from '../components/Experiences';
+import { Footer } from '../components/Footer';
+import { FormContact } from '../components/FormContact';
 import { Header } from '../components/Header';
 import { HomeHero } from '../components/HomeHero';
 import { Projects } from '../components/Projects';
@@ -16,7 +18,10 @@ export default function Home() {
         <Experiences />
         <Projects />
         <Skills />
+        <FormContact />
       </main>
+
+      <Footer />
     </HomeContainer>
   );
 }
