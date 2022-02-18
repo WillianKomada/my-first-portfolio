@@ -7,7 +7,7 @@ interface SectionTitleProps {
   description?: string | ReactNode;
 }
 
-function SectionTitle({ title, description }: SectionTitleProps) {
+export function SectionTitle({ title, description }: SectionTitleProps) {
   return (
     <Container>
       <h1>#{title}</h1>
@@ -15,5 +15,3 @@ function SectionTitle({ title, description }: SectionTitleProps) {
     </Container>
   );
 }
-
-export default SectionTitle;
