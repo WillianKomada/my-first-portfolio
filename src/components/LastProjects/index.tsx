@@ -5,36 +5,34 @@ import { LastProjectItem } from './LastProjectItem';
 
 import { Container } from './styles';
 
-export function LastProjects() {
+interface IProjects {
+  slug: string;
+  title: string;
+  type: string;
+  description: string;
+  link: string;
+  thumbnail: string;
+}
+
+interface LastProjectsProps {
+  projects: IProjects[];
+}
+
+export function LastProjects({ projects }: LastProjectsProps) {
   return (
     <Container>
       <SectionTitle title="Últimos Projetos" />
 
       <section>
-        <LastProjectItem
-          title="Projeto 01"
-          type="Website"
-          slug="teste"
-          img="https://images.alphacoders.com/109/thumb-1920-1098034.jpg"
-        />
-        <LastProjectItem
-          title="Projeto 02"
-          type="Website"
-          slug="teste"
-          img="https://wallpaper.dog/large/20459082.jpg"
-        />
-        <LastProjectItem
-          title="Projeto 03"
-          type="Website"
-          slug="teste"
-          img="https://wallpapercave.com/wp/wp5405231.jpg"
-        />
-        <LastProjectItem
-          title="Projeto 04"
-          type="Website"
-          slug="teste"
-          img="https://wallpapercave.com/wp/wp3208018.jpg"
-        />
+        {projects.slice(0, 3).map(project => (
+          <LastProjectItem
+            key={project.slug}
+            title={project.title}
+            type={project.type}
+            slug={project.slug}
+            img={project.thumbnail}
+          />
+        ))}
       </section>
 
       <button type="button">
