@@ -6,12 +6,25 @@ import { NavLinkContainer } from './styles';
 interface NavLinkComponentProps {
   title: string;
   path: string;
+  includes?: boolean;
 }
 
-export function NavLink({ title, path }: NavLinkComponentProps) {
+export function NavLink({
+  title,
+  path,
+  includes = false
+}: NavLinkComponentProps) {
   const router = useRouter();
 
-  const isActive = router.pathname === path;
+  function includesActive() {
+    if (includes) {
+      return router.pathname.includes(path);
+    }
+
+    return path === router.pathname;
+  }
+
+  const isActive = includesActive();
 
   return (
     <NavLinkContainer isActive={isActive}>

@@ -27,7 +27,7 @@ export const FormContainer = styled.form`
     }
 
     &:not(:disabled):hover {
-      background: ${({ theme }) => darken(0.05, theme.primary)};
+      background: ${({ theme }) => darken(0.15, theme.primary)};
     }
   }
 

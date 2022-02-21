@@ -28,10 +28,14 @@ export function Footer() {
             onClick={() => handleRedirect('https://twitter.com')}
           />
           <AiOutlineGithub
-            onClick={() => handleRedirect('https://github.com')}
+            onClick={() => handleRedirect('https://github.com/williankomada')}
           />
           <AiFillLinkedin
-            onClick={() => handleRedirect('https://linkedin.com')}
+            onClick={() =>
+              handleRedirect(
+                'https://www.linkedin.com/in/willian-komada-aa705a172/'
+              )
+            }
           />
         </section>
       </div>

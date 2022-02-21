@@ -1,7 +1,7 @@
 import { darken } from 'polished';
 import styled from 'styled-components';
 
-interface ProjectProps {
+interface ProjectContainerItemProps {
   imgUrl: string;
 }
 
@@ -31,7 +31,7 @@ export const Container = styled.section`
     transition: 0.5s;
 
     &:hover {
-      background: ${({ theme }) => darken(0.05, theme.primary)};
+      background: ${({ theme }) => darken(0.15, theme.primary)};
     }
 
     a {
@@ -51,7 +51,7 @@ export const Container = styled.section`
   }
 `;
 
-export const ProjectContainer = styled.div<ProjectProps>`
+export const ProjectContainerItem = styled.div<ProjectContainerItemProps>`
   width: 100%;
   display: flex;
   height: 25rem;
