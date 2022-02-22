@@ -8,7 +8,7 @@ interface SkillItemProps {
 
 export function SkillItem({ title, icon }: SkillItemProps) {
   return (
-    <SkillItemContainer>
+    <SkillItemContainer data-aos="flip-right">
       <p>{title}</p>
       {icon}
     </SkillItemContainer>

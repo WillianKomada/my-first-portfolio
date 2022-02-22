@@ -23,7 +23,7 @@ export function LastProjects({ projects }: LastProjectsProps) {
     <Container>
       <SectionTitle title="Últimos Projetos" />
 
-      <section>
+      <section data-aos="fade-up">
         {projects.slice(0, 3).map(project => (
           <LastProjectItem
             key={project.slug}
@@ -35,7 +35,7 @@ export function LastProjects({ projects }: LastProjectsProps) {
         ))}
       </section>
 
-      <button type="button">
+      <button type="button" data-aos="fade-down">
         <Link href="/projects">
           <a>Ver todos os projetos</a>
         </Link>

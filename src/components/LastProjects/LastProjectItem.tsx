@@ -17,7 +17,7 @@ export function LastProjectItem({
   img
 }: LastProjectItemProps) {
   return (
-    <ProjectContainerItem imgUrl={img}>
+    <ProjectContainerItem imgUrl={img} data-aos="flip-right">
       <section>
         <div className="overlay" />
         <div className="text">

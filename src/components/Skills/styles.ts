@@ -47,7 +47,7 @@ export const SkillItemContainer = styled.div`
   &:hover {
     svg {
       color: ${({ theme }) => theme.primary};
-      transform: scale(0.95);
+      transform: scale(1.05);
     }
   }
 

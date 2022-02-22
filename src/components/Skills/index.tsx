@@ -11,7 +11,7 @@ export function Skills() {
     <Container>
       <SectionTitle title="Habilidades" />
 
-      <section>
+      <section data-aos="fade-up">
         <SkillItem title="HTML5" icon={<AiFillHtml5 />} />
         <SkillItem title="CSS3" icon={<FaCss3Alt />} />
         <SkillItem title="JavaScript" icon={<IoLogoJavascript />} />
