@@ -7,7 +7,7 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
-  height: calc(100vh - 16rem);
+  height: 100vh;
 
   > img {
     width: 40rem;
