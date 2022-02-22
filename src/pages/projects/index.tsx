@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
 
@@ -22,6 +23,23 @@ type ProjectsProps = {
 export default function Projects({ projects }: ProjectsProps) {
   return (
     <ProjectsContainer>
+      <Head>
+        <title>Projetos | Willian Komada</title>
+
+        <meta
+          name="description"
+          content="Projetos desenvolvidos por Willian Komada"
+        />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta
+          property="og:description"
+          content="Projetos desenvolvidos por Willian Komada"
+        />
+      </Head>
+
       <Header />
 
       <main className="container">

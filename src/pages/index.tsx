@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
 import Aos from 'aos';
@@ -35,6 +36,20 @@ export default function Home({ projects }: HomeProps) {
 
   return (
     <HomeContainer>
+      <Head>
+        <title>Home | Willian Komada</title>
+
+        <meta name="description" content="Desenvolvedor Front-end ReactJS" />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta
+          property="og:description"
+          content="Desenvolvedor Front-end ReactJS"
+        />
+      </Head>
+
       <Header />
 
       <main className="container">
