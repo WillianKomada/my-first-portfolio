@@ -1,4 +1,4 @@
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.section``;
@@ -50,7 +50,7 @@ export const FormInput = styled.input`
   background: ${({ theme }) => theme.inputBackground};
   border: 1px solid ${({ theme }) => theme.border};
   padding: 1.7rem 1.5rem;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => lighten(0.3, theme.primary)};
   border-radius: 0.5rem;
   font-size: 1.2rem;
   outline: none;
@@ -62,6 +62,7 @@ export const FormInput = styled.input`
 
   &::placeholder {
     color: ${({ theme }) => theme.primary};
+    font-weight: 500;
   }
 
   @media (max-width: 450px) {
@@ -76,7 +77,7 @@ export const FormTextArea = styled.textarea`
   background: ${({ theme }) => theme.inputBackground};
   border: 1px solid ${({ theme }) => theme.border};
   padding: 1.7rem 1.5rem;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => lighten(0.3, theme.primary)};
   border-radius: 0.5rem;
   font-size: 1.2rem;
   outline: none;
@@ -91,6 +92,7 @@ export const FormTextArea = styled.textarea`
 
   &::placeholder {
     color: ${({ theme }) => theme.primary};
+    font-weight: 500;
   }
 
   @media (max-width: 700px) {

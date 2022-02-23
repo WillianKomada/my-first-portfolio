@@ -37,7 +37,7 @@ export const Container = styled.div<ContainerProps>`
     width: 100%;
     height: 100%;
     background: ${({ theme }) => theme.gradient};
-    opacity: 0.3;
+    opacity: 0.25;
     transition: 0.5s;
   }
 

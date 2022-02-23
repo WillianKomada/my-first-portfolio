@@ -1,3 +1,4 @@
+import { lighten } from 'polished';
 import styled from 'styled-components';
 
 interface ContainerProps {
@@ -16,7 +17,7 @@ export const Container = styled.div<ContainerProps>`
     align-items: flex-end;
     justify-content: flex-start;
     border-radius: 0.5rem;
-    border: 1px solid ${({ theme }) => theme.border};
+    border: 1px solid ${({ theme }) => lighten(0.1, theme.border)};
     transition: 0.5s;
     cursor: pointer;
     overflow: hidden;
@@ -51,7 +52,7 @@ export const Container = styled.div<ContainerProps>`
       width: 100%;
       height: 100%;
       background: ${({ theme }) => theme.gradient};
-      opacity: 0.75;
+      opacity: 0.5;
       transition: 0.5s;
     }
   }

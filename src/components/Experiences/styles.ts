@@ -36,6 +36,7 @@ export const ItemContainer = styled.div`
     justify-content: flex-start;
 
     transition: 1s !important;
+    max-width: 300px;
 
     h1 {
       color: ${({ theme }) => theme.primary};
@@ -68,7 +69,8 @@ export const ItemContainer = styled.div`
 
   @media (max-width: 1000px) {
     > div {
-      height: 15rem;
+      height: auto;
+      min-height: 15rem;
       padding-top: 1.5rem;
 
       h1 {
@@ -81,7 +83,7 @@ export const ItemContainer = styled.div`
       }
 
       p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
     }
   }
@@ -96,6 +98,7 @@ export const ItemContainer = styled.div`
     }
 
     > div {
+      max-width: 100%;
       height: auto;
       padding: 2rem;
 

@@ -15,7 +15,6 @@ export default createGlobalStyle`
 
     ::-webkit-scrollbar-thumb {
       background: ${({ theme }) => theme.primary};
-      border-radius: 10px;
     }
 
     ::-webkit-scrollbar-track{

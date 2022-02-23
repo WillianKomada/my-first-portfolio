@@ -1,3 +1,4 @@
+import { darken } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.section`
@@ -46,8 +47,8 @@ export const SkillItemContainer = styled.div`
 
   &:hover {
     svg {
-      color: ${({ theme }) => theme.primary};
-      transform: scale(1.05);
+      color: ${({ theme }) => darken(0.05, theme.primary)};
+      transform: scale(1.2);
     }
   }
 

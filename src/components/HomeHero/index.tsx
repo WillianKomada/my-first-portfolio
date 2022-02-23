@@ -1,11 +1,11 @@
-import picture from '../../assets/pessoa.webp';
+import photo from '../../assets/picture.png';
 
 import { Container, TextContainer, InfosContainer, CodeItem } from './styles';
 
 export function HomeHero() {
   return (
     <Container data-aos="fade-up">
-      <img src={picture} alt="Foto" data-aos="fade-right" />
+      <img src={photo} alt="Foto" data-aos="fade-right" />
 
       <div data-aos="fade-left">
         <TextContainer>
