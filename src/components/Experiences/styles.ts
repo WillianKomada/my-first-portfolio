@@ -36,7 +36,7 @@ export const ItemContainer = styled.div`
     justify-content: flex-start;
 
     transition: 1s !important;
-    max-width: 300px;
+    max-width: 19.5rem;
 
     h1 {
       color: ${({ theme }) => theme.primary};
