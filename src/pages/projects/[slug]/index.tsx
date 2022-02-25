@@ -99,7 +99,7 @@ export const getStaticProps: GetStaticProps = async context => {
   return {
     props: {
       project
-    }
-    // revalidade: 86400 // 60 * 60 * 24 // 24hrs
+    },
+    revalidate: 60 * 60 * 24 // 24 hours
   };
 };
