@@ -1,20 +1,17 @@
-import { useEffect } from 'react';
-import Head from 'next/head';
-import { GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
 import Aos from 'aos';
-
+import 'aos/dist/aos.css';
+import { GetStaticProps } from 'next';
+import Head from 'next/head';
+import { useEffect } from 'react';
+import { Experiences } from '../components/Experiences';
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { HomeHero } from '../components/HomeHero';
-import { Experiences } from '../components/Experiences';
 import { LastProjects } from '../components/LastProjects';
 import { Skills } from '../components/Skills';
-import { FormContact } from '../components/FormContact';
-import { Footer } from '../components/Footer';
 import { getPrismicClient } from '../services/prismic';
-
 import { HomeContainer } from '../styles/HomeStyles';
-import 'aos/dist/aos.css';
 
 interface IProjects {
   slug: string;
@@ -57,7 +54,7 @@ export default function Home({ projects }: HomeProps) {
         <Experiences />
         <LastProjects projects={projects} />
         <Skills />
-        <FormContact />
+        {/* <FormContact /> */}
       </main>
 
       <Footer />
